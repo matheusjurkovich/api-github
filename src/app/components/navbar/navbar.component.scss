@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 4rem;
+  background-color: #011b30;
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+
+    li {
+      a {
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          color: #8f8e8e;
+        }
+      }
+    }
+  }
+}

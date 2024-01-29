@@ -13,12 +13,9 @@ export class SearchPageComponent implements OnInit {
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    const query = this.route.snapshot.queryParamMap.get('q');
-    this.http
-      .get(`https://api.github.com/search/repositories?q=${query}`)
-      .subscribe(
-        (data) => (this.results = data),
-        (error) => console.error(error)
-      );
+    const query = this.route.snapshot.queryParamMap.get('q') || 'valor-padrão';
+
+    // Exibe o parâmetro na tela
+    document.querySelector('h1').innerHTML = `Resultado da pesquisa: ${query}`;
   }
 }

@@ -1,1 +1,30 @@
-<h1>search page</h1>
+<div class="results" *ngIf="results">
+  <app-card
+    *ngFor="let repo of results.items"
+    [imgUrl]="repo.owner.avatar_url"
+    [title]="repo.name"
+    [description]="repo.description"
+    [stars]="repo.stargazers_count"
+    [forks]="repo.forks_count"
+    [views]="repo.watchers_count"
+    [skill]="repo.language"
+    [repoUrl]="repo.html_url"
+  ></app-card>
+</div>
+<div *ngIf="results && totalItems > itemsPerPage">
+  <div class="pagination">
+    <button
+      (click)="searchGitHub(query, currentPage - 1)"
+      [disabled]="currentPage === 1"
+    >
+      Anterior
+    </button>
+    <span>{{ currentPage }}</span>
+    <button
+      (click)="searchGitHub(query, currentPage + 1)"
+      [disabled]="currentPage === totalPages"
+    >
+      Próxima
+    </button>
+  </div>
+</div>

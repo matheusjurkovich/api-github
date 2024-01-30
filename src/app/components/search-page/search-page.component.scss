@@ -1,0 +1,32 @@
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+
+  button {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #011b30;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: #011b30ca;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}

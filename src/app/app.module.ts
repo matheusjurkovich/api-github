@@ -10,6 +10,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { MatIconModule } from '@angular/material/icon';
     SearchPageComponent,
     NavbarComponent,
     HomeComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

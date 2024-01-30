@@ -1,27 +1,59 @@
-# ApiGithub
+# GitHub API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Este é um projeto em Angular 16 que permite aos usuários buscar repositórios no GitHub usando a API pública do GitHub. Ele utiliza a biblioteca Angular Material para aprimorar a interface do usuário, incluindo ícones que são fornecidos pela mesma biblioteca.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Pesquisa de Repositórios:** Os usuários podem pesquisar repositórios do GitHub usando palavras-chave.
+- **Lista de Resultados:** Exibe uma lista de resultados de repositórios correspondentes à pesquisa.
+- **Detalhes do Repositório:** Fornece informações detalhadas sobre um repositório específico ao ser selecionado na lista.
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 16:** A estrutura de desenvolvimento front-end.
+- **Angular Material:** Biblioteca de UI para criar uma interface de usuário moderna e responsiva.
+- **GitHub API:** A API pública do GitHub para obter informações sobre repositórios.
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone o Repositório:**
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Instale as Dependências:**
 
-## Running end-to-end tests
+   ```bash
+   cd nome-do-repositorio
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Inicie o Servidor de Desenvolvimento:**
 
-## Further help
+   ```bash
+   ng serve
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   O aplicativo estará acessível em `http://localhost:4200/`.
+
+## Configuração da API do GitHub
+
+Certifique-se de ter uma [chave de acesso pessoal](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) do GitHub para evitar limitações na taxa de solicitações à API.
+
+Crie um arquivo `src/environments/environment.ts` e adicione sua chave de acesso:
+
+```typescript
+export const environment = {
+  production: false,
+  githubApiKey: "Sua-Chave-de-Acesso-Pessoal",
+};
+```
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar este projeto.
+
+## Licença
+
+Este projeto é licenciado sob a [MIT License](LICENSE).

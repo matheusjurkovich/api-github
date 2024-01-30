@@ -13,8 +13,7 @@ export class SearchPageComponent implements OnInit {
   itemsPerPage: number = 10;
   totalItems: number = 0;
   totalPages: number = 0;
-  query: string = ''; // Declare a variável query
-
+  query: string = '';
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
   ngOnInit() {

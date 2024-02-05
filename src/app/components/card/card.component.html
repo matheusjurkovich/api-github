@@ -4,10 +4,31 @@
     <h2>{{ title }}</h2>
     <p class="descricao">{{ description }}</p>
     <ul>
-      <li>Stars: {{ stars }}</li>
-      <li>Forks: {{ forks }}</li>
-      <li>Views: {{ views }}</li>
-      <li>Skill: {{ skill }}</li>
+      <li>
+        <mat-icon
+          aria-hidden="false"
+          aria-label="star icon"
+          fontIcon="star"
+        ></mat-icon>
+        <span>{{ stars }}</span>
+      </li>
+      <li>
+        <mat-icon
+          aria-hidden="false"
+          aria-label="fork icon"
+          fontIcon="account_tree"
+        ></mat-icon>
+        {{ forks }}
+      </li>
+      <li>
+        <mat-icon
+          aria-hidden="false"
+          aria-label="eye icon"
+          fontIcon="visibility"
+        ></mat-icon
+        >{{ views }}
+      </li>
+      <li>Language: {{ language }}</li>
     </ul>
     <a [href]="repoUrl">Acessar Repositorio</a>
   </div>

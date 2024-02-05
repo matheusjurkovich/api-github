@@ -43,6 +43,10 @@
       li {
         margin: 5px 0;
         font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
       }
     }
 

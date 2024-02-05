@@ -12,6 +12,6 @@ export class CardComponent {
   @Input() stars: number = 0;
   @Input() forks: number = 0;
   @Input() views: number = 0;
-  @Input() skill: string = '';
+  @Input() language: string[] = [];
   @Input() repoUrl: string = '';
 }

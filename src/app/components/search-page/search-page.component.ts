@@ -37,7 +37,6 @@ export class SearchPageComponent implements OnInit {
         this.totalItems = data.total_count;
         this.totalPages = Math.ceil(this.totalItems / this.itemsPerPage);
         this.currentPage = page;
-        console.log('Dados da API do GitHub', data);
       },
       (error) => {
         console.error('Erro ao buscar dados da API do GitHub', error);

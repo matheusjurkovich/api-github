@@ -10,7 +10,7 @@ Este é um projeto em Angular 16 que permite aos usuários buscar repositórios 
 
 ## Tecnologias Utilizadas
 
-- **Angular 16:** A estrutura de desenvolvimento front-end.
+- **Angular 16:** Framework de desenvolvimento front-end.
 - **Angular Material:** Biblioteca de UI para criar uma interface de usuário moderna e responsiva.
 - **GitHub API:** A API pública do GitHub para obter informações sobre repositórios.
 
@@ -19,36 +19,23 @@ Este é um projeto em Angular 16 que permite aos usuários buscar repositórios 
 1. **Clone o Repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone git@github.com:matheusjurkovich/api-github.git
    ```
 
 2. **Instale as Dependências:**
 
    ```bash
-   cd nome-do-repositorio
+   cd api-github
    npm install
    ```
 
 3. **Inicie o Servidor de Desenvolvimento:**
 
    ```bash
-   ng serve
+   npm start
    ```
 
    O aplicativo estará acessível em `http://localhost:4200/`.
-
-## Configuração da API do GitHub
-
-Certifique-se de ter uma [chave de acesso pessoal](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) do GitHub para evitar limitações na taxa de solicitações à API.
-
-Crie um arquivo `src/environments/environment.ts` e adicione sua chave de acesso:
-
-```typescript
-export const environment = {
-  production: false,
-  githubApiKey: "Sua-Chave-de-Acesso-Pessoal",
-};
-```
 
 ## Contribuições
 
